@@ -1,0 +1,100 @@
+
+body{
+    background: bisque;
+}
+.card{
+    display:flex;
+    flex-direction:column;
+    background-color:white;
+    padding:30px;
+    margin:70px 250px;
+    border-radius: 10px;
+}
+
+.card-title{
+    max-height: 100%;
+    max-width: 100%;
+    padding:10px;
+}
+img.pic{
+    width:100%;
+}
+.card-title.recipe{
+    line-height: 1.5;
+}
+.card-title.prep{
+    background-color: rgb(248, 229, 232);
+    border-radius: 10px;
+}
+.card-title.prep h2{
+    margin:5px;
+    color: rgb(144, 17, 144);
+}
+.card-title.prep li{
+    padding-bottom:10px;
+}
+.card-title.prep li span{
+    font-weight: bold;
+}
+.card-title.Ingredients h2{
+    color:rgb(201, 25, 25);
+}
+.card-title.Ingredients li{
+    padding-bottom: 10px;
+    list-style: none;
+}
+.card-title.Ingredients li::before{
+    content: "\2022";
+    color:rgb(201, 25, 25);
+    width: 1em;
+    display: inline-block;
+    margin-left: -1em;
+}
+.card-title.Ingredients{
+    border-bottom:1px solid gray;
+}
+.card-title.Instructions h2{
+    color:rgb(201, 25, 25);
+}
+.card-title.Instructions span{
+    font-weight: bold;
+}
+.card-title.Instructions li{
+    padding-bottom: 5px;
+    line-height: 1.5;
+}
+
+.card-title.Instructions ol li::marker{
+color:rgb(201, 25, 25);
+font-weight: bold;
+}
+.card-title.Instructions{
+    border-bottom: 1px solid gray;
+}
+.nutrition h2{
+    color:rgb(201, 25, 25);
+}
+td{
+    padding-right:200px;
+    line-height: 2;
+   
+}
+tr{
+    border-bottom: 1px solid gray;
+}
+
+/* ----- tablet & mobile view ------ */
+@media only screen and (max-width:767px) {
+    td{
+        padding-right:75px;
+    }
+    .card{
+        padding:25px;
+        width:100%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    td{
+        padding-right:75px;
+    }
+}
